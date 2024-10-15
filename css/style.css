@@ -10,18 +10,54 @@ body {
 }
 
 body div {
-  border: 2px solid black;
   max-height: 100%;
   max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+div {
+  border: 2px solid black;
 }
 
 .header {
   grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.search {
+  grid-column: 1 / 2;
+}
+
+.search > form {
+  padding: 1em 1em 1em 2em;
+  display: flex;
+}
+
+form > label {
+  padding-right: 1em;
+}
+
+form > input {
+  width: 100%; }
+
+.user-greeting {
+  grid-row-start: 2;
+  padding: 1em 1em 1em 2em;
+}
+
+.actions {
+  grid-column-start: 2;
+  grid-row: 1 / -1;
 }
 
 .sidebar {
   grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
 }
