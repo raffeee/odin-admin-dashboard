@@ -9,41 +9,182 @@
 
   </head>
   <body>
+    <!-- Header/Navigation bar -->
     <div class='header'>
-      <div class='search'>
-        <form>
-          <label for='search-bar'>icon</label>
-          <input type='text' id='search-bar' name='search-bar'>
-        </form>
+      <div class="topNav">
+        <div class='search'>
+          <form>
+            <label for='search-query'><img src="/icons/magnify.svg" alt="" /></label>
+            <input type='text' id='search-query' name='search-query'>
+          </form>
+        </div>
+        <div class='account'>
+          <div class="menuIcon">
+            <img src="/icons/bell-ring-outline.svg" alt="" />
+          </div>
+          <div class="avatar">
+            <!-- User icon, set with CSS -->
+          </div>
+          <p class="name">Rindo Kanade</p>
+        </div>
       </div>
-      <div class='user-greeting'>
-
-      </div>
-      <div class='actions'>
-
+      <div class="botNav">
+        <div class="profile">
+          <div class="avatar"></div>
+          <div class="greeting">Hi there,</div>
+          <p class="name">Rindo Kanade
+            <span class="username">(@kinonight)</span>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <button class="btn">New</button>
+          <button class="btn">Upload</button>
+          <button class="btn">Share</button>
+        </div>
       </div>
     </div>
+
     <div class='sidebar'>
-      <div class='branding'>
-
+      <div class='branding navItem'>
+        <img src="/icons/view-dashboard.svg" alt="" />
+        Branding
       </div>
-      <div class='navigation'>
-
+      <div class='navItem'>
+        <img src="/icons/home.svg" alt="" />
+        Home
+      </div>
+      <div class='navItem'>
+        <img src="/icons/card-account-details-outline.svg" alt="" />
+        Profile
+      </div>
+      <div class='navItem'>
+        <img src="/icons/message.svg" alt="" />
+        Messages
+      </div>
+      <div class='navItem'>
+        <img src="/icons/clock-time-three.svg" alt="" />
+        History
+      </div>
+      <div class='navItem'>
+        <img src="/icons/note-multiple.svg" alt="" />
+        Tasks
+      </div>
+      <div class='navItem'>
+        <img src="/icons/account-group.svg" alt="" />
+        Communities
+      </div>
+      <!-- do nth child css selector for extra spacing -->
+      <div class='navItem'>
+        <img src="/icons/cog.svg" alt="" />
+        Settings
+      </div>
+      <div class='navItem'>
+        <img src="/icons/help-box.svg" alt="" />
+        Support
+      </div>
+      <div class='navItem'>
+        <img src="/icons/shield-check.svg" alt="" />
+        Privacy
       </div>
     </div>
-    <div class='main-content'>
-      <div class='projects'>
-        <div class='project card'></div>
-        <div class='project card'></div>
-        <div class='project card'></div>
-        <div class='project card'></div>
-        <div class='project card'></div>
-        <div class='project card'></div>
+    
+    <main class="content">
+      <div class="projects">
+        <div class="cards">
+          <div class="card">
+            <h5>Super Cool Project</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="card-actions">
+              <img src="/icons/star-plus-outline.svg"/>
+              <img src="/icons/eye-plus-outline.svg"/>
+              <img src="/icons/source-branch.svg"/>
+            </div>
+          </div>
+          <div class="card">
+            <h5>Less Cool Project</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="card-actions">
+              <img src="/icons/star-plus-outline.svg"/>
+              <img src="/icons/eye-plus-outline.svg"/>
+              <img src="/icons/source-branch.svg"/>
+            </div>
+          </div>
+          <div class="card">
+            <h5>Impossible App</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="card-actions">
+              <img src="/icons/star-plus-outline.svg"/>
+              <img src="/icons/eye-plus-outline.svg"/>
+              <img src="/icons/source-branch.svg"/>
+            </div>
+          </div>
+          <div class="card">
+            <h5>Easy Peasy App</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="card-actions">
+              <img src="/icons/star-plus-outline.svg"/>
+              <img src="/icons/eye-plus-outline.svg"/>
+              <img src="/icons/source-branch.svg"/>
+            </div>
+          </div>
+          <div class="card">
+            <h5>Ad Blocker</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="card-actions">
+              <img src="/icons/star-plus-outline.svg"/>
+              <img src="/icons/eye-plus-outline.svg"/>
+              <img src="/icons/source-branch.svg"/>
+            </div>
+          </div>
+          <div class="card">
+            <h5>Money Maker</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="card-actions">
+              <img src="/icons/star-plus-outline.svg"/>
+              <img src="/icons/eye-plus-outline.svg"/>
+              <img src="/icons/source-branch.svg"/>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="main-content-right">
-        <div class='announcements'></div>
-        <div class='trending'></div>
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <div class="announcement-item">
+          <h6>Site Maintenance</h6>
+          <p>Sed et voluptatibus quo qui. Exercitationem dolorum quam corrupti earum exercitationem dicta animi.</p>
+        </div>
+        <div class="announcement-item">
+          <h6>Community Share Day</h6>
+          <p>Sed et voluptatibus quo qui. Exercitationem dolorum quam corrupti earum exercitationem dicta animi.</p>
+        </div>
+        <div class="announcement-item">
+          <h6>Updated Privacy Policy</h6>
+          <p>Sed et voluptatibus quo qui. Exercitationem dolorum quam corrupti earum exercitationem dicta animi.</p>
+        </div>
       </div>
-    </div>
+      <div class="trending">
+        <h3>Trending</h3>
+        <div class="trending-user">
+          <div class="avatar avatar1">icon</div>
+          <p class="username">@tegan</p>
+          <p class="project-name">World Peace Builder</p>
+        </div>
+        <div class="trending-user">
+          <div class="avatar avatar2">icon</div>
+          <p class="username">@morgan</p>
+          <p class="project-name">Super Cool Project</p>
+        </div>
+        <div class="trending-user">
+          <div class="avatar avatar3">icon</div>
+          <p class="username">@kendall</p>
+          <p class="project-name">Life Changing App</p>
+        </div>
+        <div class="trending-user">
+          <div class="avatar avatar4">icon</div>
+          <p class="username">@alex</p>
+          <p class="project-name">No Traffic Maker</p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
