@@ -1,0 +1,94 @@
+:root {
+    font-size: 16px;
+    --text-primary: black;
+    --text-secondary: white;
+    --text-auxiliary: rgb(99, 99, 99);
+    --bg-primary: white;
+    --bg-secondary: rgb(226, 232, 240);
+    --accent-color: rgb(25, 146, 212);
+    --card-accent-color: rgb(240, 180, 41);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.8fr 4fr;
+}
+
+img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    display: grid;
+    width: 100%;
+}
+
+.topNav {
+    display: flex;
+    flex-direction: row;
+    height: 0.4fr;
+}
+
+.botNav {
+    display: flex;
+    flex-direction: row;
+    height: 0.6fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+}
+
+.nav-item > img {
+    margin: 0.5em 1.5em;
+    /* TODO: change svg color to white */
+    fill: var(--text-secondary);
+}
+
+.branding > img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.branding > span {
+    font-size: 1.5em;
+}
+
+.content {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+    grid-column: 1;
+    grid-row: 1 / -1;
+}
+
+.announcements {
+    grid-column: 2 / -1;
+    grid-row: 1;
+}
+
+.trending {
+    grid-column: 2 / -1;
+    grid-row: 2;
+}
